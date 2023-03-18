@@ -1,3 +1,10 @@
+/*
+parsers: # array
+  - reg: https://suo.st/*
+    remote:
+      url: https://raw.githubusercontent.com/zjy282/stoverride/main/clash/my.js
+      cache: true
+*/
 module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url, interval, selected }) => {
     var customs = [
         'DOMAIN-KEYWORD,rockstargames,🚀 节点选择',
