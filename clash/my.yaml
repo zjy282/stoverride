@@ -1,5 +1,4 @@
-module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url, interval, selected }) => {
-   return `yaml:
+yaml:
       prepend-rules:
         - DOMAIN-KEYWORD,rockstargames,🚀 节点选择
         - DOMAIN-SUFFIX,jetbrains.com,🚀 节点选择
@@ -38,5 +37,4 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         - DOMAIN-SUFFIX,openai.com,🇺🇸 美国01
         - DOMAIN-SUFFIX,nvidia.com,🚀 节点选择
         - DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择
-        - DOMAIN-SUFFIX,convertio.me,🚀 节点选择`
-}
+        - DOMAIN-SUFFIX,convertio.me,🚀 节点选择
