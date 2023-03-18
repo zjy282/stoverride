@@ -45,7 +45,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         'DOMAIN-SUFFIX,nvidia.com,🚀 节点选择',
         'DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择',
         'DOMAIN-SUFFIX,convertio.me,🚀 节点选择',
-        'DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择'
+        'DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择',
         'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
