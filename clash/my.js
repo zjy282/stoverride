@@ -41,7 +41,6 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-SUFFIX,suo.st,🚀 节点选择',
 'DOMAIN-SUFFIX,suo.yt,🚀 节点选择',
 'DOMAIN,api.subcloud.xyz,🚀 节点选择',
-'DOMAIN-SUFFIX,openai.com,🇺🇸 美国01',
 'DOMAIN-SUFFIX,nvidia.com,🚀 节点选择',
 'DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择',
 'DOMAIN-SUFFIX,convertio.me,🚀 节点选择',
