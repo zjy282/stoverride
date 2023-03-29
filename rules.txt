@@ -37,5 +37,6 @@ DOMAIN-SUFFIX,jsdelivr.net,PROXY
 DOMAIN-SUFFIX,convertio.me,PROXY
 DOMAIN-SUFFIX,githubusercontent.com,PROXY
 DOMAIN-SUFFIX,pythonhosted.org,PROXY
+DOMAIN-SUFFIX,openai.com,US
 
 GEOIP,US,PROXY

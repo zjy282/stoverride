@@ -41,4 +41,5 @@ rules:
   - DOMAIN-SUFFIX,convertio.me,🚀 节点选择
   - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
   - DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🇺🇲 美国节点
   - GEOIP,US,🚀 节点选择

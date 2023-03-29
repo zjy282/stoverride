@@ -46,9 +46,24 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-SUFFIX,convertio.me,🚀 节点选择',
 'DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择',
 'DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择',
+'DOMAIN-SUFFIX,openai.com,🇺🇲 美国节点',
 'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
     obj.rules = customs.concat(obj.rules)
+
+	var proxies = []
+    for (var i=0;i<obj.proxies.length;i++){
+		if (obj.proxies[i].name.search("美国") != -1){
+	    		proxies.push(obj.proxies[i].name)
+		}
+	}
+  	obj["proxy-groups"].push({
+		"name": "🇺🇲 美国节点",
+		"type": "url-test",
+		url: "http://www.gstatic.com/generate_204",
+		interval: 300,
+		proxies: proxies
+  	})
     return yaml.stringify(obj)
 }
