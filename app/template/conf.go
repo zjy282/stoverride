@@ -26,19 +26,19 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     }
     obj.rules = obj.rules.slice(0,-2).concat(customs.concat(obj.rules.slice(-2)))
 
-	const proxies = [];
-	for (let i=0; i<obj.proxies.length; i++){
-		if (obj.proxies[i].name.search("美国") !== -1){
-	    		proxies.push(obj.proxies[i].name)
-		}
-	}
-  	obj["proxy-groups"].push({
-		"name": "🇺🇲 美国节点",
-		"type": "url-test",
-		url: "http://www.gstatic.com/generate_204",
-		interval: 300,
-		proxies: proxies
-  	})
+    const proxies = [];
+    for (let i = 0; i < obj.proxies.length; i++) {
+        if (obj.proxies[i].name.search("美国") !== -1) {
+            proxies.push(obj.proxies[i].name)
+        }
+    }
+    obj["proxy-groups"].push({
+        "name": "🇺🇲 美国节点",
+        "type": "url-test",
+        url: "http://www.gstatic.com/generate_204",
+        interval: 300,
+        proxies: proxies
+    })
     return yaml.stringify(obj)
 }
 `
