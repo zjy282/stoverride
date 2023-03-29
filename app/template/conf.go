@@ -12,11 +12,11 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         %s
     ]
     const obj = yaml.parse(raw)
-    obj.rules = customs.concat(obj.rules)
+    obj.rules = obj.rules.concat(customs)
 
-	var proxies = []
-    for (var i=0;i<obj.proxies.length;i++){
-		if (obj.proxies[i].name.search("美国") != -1){
+	const proxies = [];
+	for (let i=0; i<obj.proxies.length; i++){
+		if (obj.proxies[i].name.search("美国") !== -1){
 	    		proxies.push(obj.proxies[i].name)
 		}
 	}
