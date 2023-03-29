@@ -12,6 +12,18 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         %s
     ]
     const obj = yaml.parse(raw)
+    let domains = {};
+
+    for (let i = 0; i < customs.length; i++) {
+        let domainItem = customs[i].split(",")[1]
+        domains[domainItem] = true
+    }
+    for (let i = 0; i < obj.rules.length; i++) {
+        let domainItem = obj.rules[i].split(",")[1]
+        if (domains[domainItem]) {
+            delete obj.rules[i]
+        }
+    }
     obj.rules = obj.rules.slice(0,-2).concat(customs.concat(obj.rules.slice(-2)))
 
 	const proxies = [];
