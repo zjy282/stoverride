@@ -50,7 +50,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
-    obj.rules = obj.rules.concat(customs)
+    obj.rules = obj.rules.slice(0,-2).concat(customs.concat(obj.rules.slice(-2)))
 
 	const proxies = [];
 	for (let i=0; i<obj.proxies.length; i++){
