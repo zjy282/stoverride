@@ -34,7 +34,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     }
     obj["proxy-groups"].push({
         "name": "🇺🇲 美国节点",
-        "type": "url-test",
+        "type": "select",
         url: "http://www.gstatic.com/generate_204",
         interval: 300,
         proxies: proxies
