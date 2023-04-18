@@ -37,7 +37,7 @@ DOMAIN-SUFFIX,jsdelivr.net,PROXY
 DOMAIN-SUFFIX,convertio.me,PROXY
 DOMAIN-SUFFIX,pythonhosted.org,PROXY
 DOMAIN-KEYWORD,depay,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,QSKX
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
 DOMAIN-KEYWORD,github,QSKX
 DOMAIN-SUFFIX,openai.com,QSKX
 DOMAIN-SUFFIX,github.com,QSKX

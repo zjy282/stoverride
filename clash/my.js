@@ -46,7 +46,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-SUFFIX,convertio.me,🚀 节点选择',
 'DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择',
 'DOMAIN-KEYWORD,depay,🚀 节点选择',
-'DOMAIN-SUFFIX,githubusercontent.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择',
 'DOMAIN-KEYWORD,github,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,openai.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,github.com,🧑🏼‍💻 科学网络',
