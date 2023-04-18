@@ -39,6 +39,13 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         interval: 300,
         proxies: proxies
     })
+	obj["proxy-groups"].push({
+        "name": "🧑🏼‍💻 科学网络",
+        "type": "select",
+        url: "http://www.gstatic.com/generate_204",
+        interval: 300,
+        proxies: ["DIRECT", "🚀 节点选择"]
+    })
     return yaml.stringify(obj)
 }
 `
