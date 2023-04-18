@@ -43,7 +43,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         "name": "🧑🏼‍💻 科学网络",
         "type": "fallback",
         url: "https://twitter.com/",
-        interval: 300,
+        interval: 1000,
         proxies: ["DIRECT", "🚀 节点选择"]
     })
     return yaml.stringify(obj)
