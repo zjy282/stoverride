@@ -12,6 +12,7 @@ var MappingRule = map[string]string{
 	"PROXY":  "🚀 节点选择",
 	"DIRECT": "🎯 全球直连",
 	"US":     "🇺🇲 美国节点",
+	"QSKX":   "🧑🏼‍💻 科学网络",
 }
 
 func main() {
