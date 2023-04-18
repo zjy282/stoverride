@@ -41,7 +41,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     })
 	obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
-        "type": "url-test",
+        "type": "fallback",
         url: "https://twitter.com/",
         interval: 300,
         proxies: ["DIRECT", "🚀 节点选择"]
