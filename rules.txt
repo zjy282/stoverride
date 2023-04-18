@@ -40,6 +40,7 @@ DOMAIN-KEYWORD,depay,PROXY
 DOMAIN-SUFFIX,githubusercontent.com,QSKX
 DOMAIN-KEYWORD,github,QSKX
 DOMAIN-SUFFIX,openai.com,QSKX
+DOMAIN-SUFFIX,github.com,QSKX
 DOMAIN-SUFFIX,twitter.com,QSKX
 DOMAIN-SUFFIX,midjourney.com,QSKX
 DOMAIN-SUFFIX,discord.com,QSKX
