@@ -35,9 +35,14 @@ DOMAIN,api.subcloud.xyz,PROXY
 DOMAIN-SUFFIX,nvidia.com,PROXY
 DOMAIN-SUFFIX,jsdelivr.net,PROXY
 DOMAIN-SUFFIX,convertio.me,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
 DOMAIN-SUFFIX,pythonhosted.org,PROXY
-DOMAIN-SUFFIX,openai.com,QSKX
 DOMAIN-KEYWORD,depay,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,QSKX
+DOMAIN-SUFFIX,openai.com,QSKX
+DOMAIN-SUFFIX,github.com,QSKX
+DOMAIN-SUFFIX,twitter.com,QSKX
+DOMAIN-SUFFIX,midjourney.com,QSKX
+DOMAIN-SUFFIX,discord.com,QSKX
+DOMAIN-SUFFIX,stripe.com,QSKX
 
 GEOIP,US,PROXY

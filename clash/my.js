@@ -44,10 +44,15 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-SUFFIX,nvidia.com,🚀 节点选择',
 'DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择',
 'DOMAIN-SUFFIX,convertio.me,🚀 节点选择',
-'DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择',
 'DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择',
-'DOMAIN-SUFFIX,openai.com,🧑🏼‍💻 科学网络',
 'DOMAIN-KEYWORD,depay,🚀 节点选择',
+'DOMAIN-SUFFIX,githubusercontent.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,openai.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,github.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,twitter.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,midjourney.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,discord.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,stripe.com,🧑🏼‍💻 科学网络',
 'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
@@ -80,8 +85,8 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     })
 	obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
-        "type": "select",
-        url: "http://www.gstatic.com/generate_204",
+        "type": "url-test",
+        url: "https://twitter.com/",
         interval: 300,
         proxies: ["DIRECT", "🚀 节点选择"]
     })
