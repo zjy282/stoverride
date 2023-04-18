@@ -26,7 +26,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     }
     obj.rules = obj.rules.slice(0,-2).concat(customs.concat(obj.rules.slice(-2)))
 
-    const proxies = [];
+    const proxies = ["DIRECT"];
     for (let i = 0; i < obj.proxies.length; i++) {
         if (obj.proxies[i].name.search("美国") !== -1) {
             proxies.push(obj.proxies[i].name)
