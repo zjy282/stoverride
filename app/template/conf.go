@@ -60,6 +60,7 @@ const lineTemplate1 = `'%s',`
 const lineTemplate2 = `  - %s`
 
 type Conf struct {
+	Key          string
 	Template     string
 	Target       string
 	LineTemplate string
@@ -67,16 +68,19 @@ type Conf struct {
 
 func GetTemplateConf() (targetList []Conf) {
 	targetList = append(targetList, Conf{
+		Key:          "clash",
 		Template:     clash,
 		Target:       "./clash/my.js",
 		LineTemplate: lineTemplate1,
 	})
 	targetList = append(targetList, Conf{
+		Key:          "qx",
 		Template:     `%s`,
 		Target:       "./quantumultx/Kevin",
 		LineTemplate: `%s`,
 	})
 	targetList = append(targetList, Conf{
+		Key:          "stash",
 		Template:     stash,
 		Target:       "./stash/my.stoverride",
 		LineTemplate: lineTemplate2,

@@ -42,11 +42,11 @@ rules:
   - DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择
   - DOMAIN-KEYWORD,depay,🚀 节点选择
   - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
-  - DOMAIN-KEYWORD,github,🧑🏼‍💻 科学网络
-  - DOMAIN-SUFFIX,openai.com,🧑🏼‍💻 科学网络
-  - DOMAIN-SUFFIX,github.com,🧑🏼‍💻 科学网络
-  - DOMAIN-SUFFIX,twitter.com,🧑🏼‍💻 科学网络
-  - DOMAIN-SUFFIX,midjourney.com,🧑🏼‍💻 科学网络
-  - DOMAIN-SUFFIX,discord.com,🧑🏼‍💻 科学网络
-  - DOMAIN-SUFFIX,stripe.com,🧑🏼‍💻 科学网络
+  - DOMAIN-KEYWORD,github,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🇺🇲 美国节点
+  - DOMAIN-SUFFIX,github.com,🚀 节点选择
+  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
+  - DOMAIN-SUFFIX,midjourney.com,🚀 节点选择
+  - DOMAIN-SUFFIX,discord.com,🚀 节点选择
+  - DOMAIN-SUFFIX,stripe.com,🚀 节点选择
   - GEOIP,US,🚀 节点选择
