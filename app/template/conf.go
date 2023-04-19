@@ -42,9 +42,9 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 	obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
         "type": "fallback",
-        url: "https://twitter.com/",
+        url: "https://google.com/",
         interval: 1000,
-        proxies: ["DIRECT", "🚀 节点选择"]
+        proxies: ["DIRECT", "🚀 节点选择", "🇺🇲 美国节点"]
     })
     return yaml.stringify(obj)
 }
