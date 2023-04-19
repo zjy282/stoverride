@@ -89,7 +89,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         "type": "fallback",
         url: "https://google.com/",
         interval: 1000,
-        proxies: ["DIRECT", "🚀 节点选择", "🇺🇲 美国节点"]
+        proxies: ["DIRECT", "🇺🇲 美国节点", "🚀 节点选择"]
     })
     return yaml.stringify(obj)
 }
