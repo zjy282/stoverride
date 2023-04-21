@@ -86,7 +86,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     })
 	obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
-        "type": "fallback",
+        "type": "select",
         url: "https://google.com/",
         interval: 1000,
         proxies: ["DIRECT", "🇺🇲 美国节点", "🚀 节点选择"]
