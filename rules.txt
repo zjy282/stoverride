@@ -21,7 +21,6 @@ DOMAIN,thesecretlivesofdata.com,PROXY
 DOMAIN,www.amazon.com,PROXY
 DOMAIN,www.parallels.com,PROXY
 DOMAIN-SUFFIX,nexitally.net,PROXY
-DOMAIN-SUFFIX,gstatic.com,PROXY
 DOMAIN-SUFFIX,vox.rocks,PROXY
 DOMAIN-SUFFIX,azureedge.net,PROXY
 DOMAIN-SUFFIX,paoche.info,PROXY

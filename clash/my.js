@@ -30,7 +30,6 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN,www.amazon.com,🚀 节点选择',
 'DOMAIN,www.parallels.com,🚀 节点选择',
 'DOMAIN-SUFFIX,nexitally.net,🚀 节点选择',
-'DOMAIN-SUFFIX,gstatic.com,🚀 节点选择',
 'DOMAIN-SUFFIX,vox.rocks,🚀 节点选择',
 'DOMAIN-SUFFIX,azureedge.net,🚀 节点选择',
 'DOMAIN-SUFFIX,paoche.info,🚀 节点选择',
@@ -66,7 +65,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     for (let i = 0; i < obj.rules.length; i++) {
         let domainItem = obj.rules[i].split(",")[1]
         if (domains[domainItem]) {
-            delete obj.rules[i]
+            obj.rules.splice(i, 1)
         }
     }
     obj.rules = obj.rules.slice(0,-2).concat(customs.concat(obj.rules.slice(-2)))
