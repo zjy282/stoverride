@@ -44,5 +44,6 @@ DOMAIN-SUFFIX,twitter.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,midjourney.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
+DOMAIN-SUFFIX,cloudfront.net,US
 
 GEOIP,US,PROXY

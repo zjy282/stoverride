@@ -53,6 +53,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-SUFFIX,midjourney.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,discord.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,stripe.com,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,cloudfront.net,🇺🇲 美国节点',
 'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
