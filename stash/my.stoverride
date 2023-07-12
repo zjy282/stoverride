@@ -50,4 +50,5 @@ rules:
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,stripe.com,🚀 节点选择
   - DOMAIN-SUFFIX,cloudfront.net,🇺🇲 美国节点
+  - DOMAIN-SUFFIX,claude.ai,🇺🇲 美国节点
   - GEOIP,US,🚀 节点选择
