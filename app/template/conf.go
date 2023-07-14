@@ -12,19 +12,43 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         %s
     ]
     const obj = yaml.parse(raw)
+    let rules = obj.rules
     let domains = {};
+    let customsDomain = []
+    let customsOther = []
+    let customsLast = []
+    let originDomain = []
+    let originOther = []
+    let originLast = []
 
     for (let i = 0; i < customs.length; i++) {
-        let domainItem = customs[i].split(",")[1]
-        domains[domainItem] = true
-    }
-    for (let i = 0; i < obj.rules.length; i++) {
-        let domainItem = obj.rules[i].split(",")[1]
-        if (domains[domainItem]) {
-            obj.rules.splice(i, 1)
+        if (customs[i].startsWith("DOMAIN")) {
+            domains[customs[i].split(",")[1]] = true
+            customsDomain.push(customs[i])
+        } else if (customs[i].startsWith("GEOIP") || customs[i].startsWith("MATCH")) {
+            customsLast.push(customs[i])
+        } else {
+            customsOther.push(customs[i])
         }
     }
-    obj.rules = obj.rules.slice(0,-2).concat(customs.concat(obj.rules.slice(-2)))
+
+    for (let i = 0; i < rules.length; i++) {
+        let domainItem = rules[i].split(",")[1]
+        if (domains[domainItem]) {
+            continue
+        }
+        if (rules[i].startsWith("DOMAIN")) {
+            originDomain.push(rules[i])
+        } else if (rules[i].startsWith("GEOIP") || rules[i].startsWith("MATCH")) {
+            originLast.push(rules[i])
+        } else {
+            originOther.push(rules[i])
+        }
+    }
+
+    obj.rules = customsDomain.concat(originDomain)
+    obj.rules = obj.rules.concat(customsOther).concat(originOther)
+    obj.rules = obj.rules.concat(customsLast).concat(originLast)
 
     const proxies = ["DIRECT"];
     for (let i = 0; i < obj.proxies.length; i++) {
@@ -39,7 +63,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         interval: 300,
         proxies: proxies
     })
-	obj["proxy-groups"].push({
+    obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
         "type": "select",
         url: "https://google.com/",
