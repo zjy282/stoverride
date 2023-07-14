@@ -47,5 +47,6 @@ DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,cloudfront.net,US
 DOMAIN-SUFFIX,claude.ai,US
+DOMAIN,bard.google.com,US
 
 GEOIP,US,PROXY
