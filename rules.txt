@@ -50,5 +50,6 @@ DOMAIN-SUFFIX,cloudfront.net,US
 DOMAIN-SUFFIX,claude.ai,US
 DOMAIN,bard.google.com,US
 IP-CIDR,52.58.0.0/15,US,{"clash":"QSKX"}
+DOMAIN-SUFFIX,intellij.net,US,{"clash":"QSKX"}
 
 GEOIP,US,PROXY
