@@ -45,7 +45,6 @@ rules:
   - DOMAIN-SUFFIX,openai.com,🇺🇲 美国节点
   - DOMAIN-KEYWORD,openai,🇺🇲 美国节点
   - DOMAIN-SUFFIX,github.com,🚀 节点选择
-  - DOMAIN-SUFFIX,twitter.com,🚀 节点选择
   - DOMAIN-SUFFIX,midjourney.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,stripe.com,🚀 节点选择

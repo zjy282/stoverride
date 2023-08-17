@@ -41,7 +41,6 @@ DOMAIN-KEYWORD,github,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,openai.com,US,{"clash":"QSKX"}
 DOMAIN-KEYWORD,openai,US,{"clash":"QSKX"}
 DOMAIN-SUFFIX,github.com,PROXY,{"clash":"QSKX"}
-DOMAIN-SUFFIX,twitter.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,midjourney.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
