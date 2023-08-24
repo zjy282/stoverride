@@ -15,8 +15,6 @@ DOMAIN-SUFFIX,doesitarm.com,PROXY
 DOMAIN-SUFFIX,isapplesiliconready.com,PROXY
 DOMAIN-SUFFIX,gravatar.com,PROXY
 DOMAIN-SUFFIX,brew.sh,PROXY
-DOMAIN-KEYWORD,aliyun,DIRECT
-DOMAIN,pingfore.qq.com,DIRECT
 DOMAIN,thesecretlivesofdata.com,PROXY
 DOMAIN,www.amazon.com,PROXY
 DOMAIN,www.parallels.com,PROXY
@@ -36,8 +34,9 @@ DOMAIN-SUFFIX,jsdelivr.net,PROXY
 DOMAIN-SUFFIX,convertio.me,PROXY
 DOMAIN-SUFFIX,pythonhosted.org,PROXY
 DOMAIN-KEYWORD,depay,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY,{"clash":"QSKX"}
 DOMAIN-KEYWORD,github,PROXY,{"clash":"QSKX"}
+DOMAIN-SUFFIX,github.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,midjourney.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
