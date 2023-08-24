@@ -38,13 +38,11 @@ DOMAIN-SUFFIX,pythonhosted.org,PROXY
 DOMAIN-KEYWORD,depay,PROXY
 DOMAIN-SUFFIX,githubusercontent.com,PROXY
 DOMAIN-KEYWORD,github,PROXY,{"clash":"QSKX"}
-DOMAIN-SUFFIX,openai.com,US,{"clash":"QSKX"}
-DOMAIN-KEYWORD,openai,US,{"clash":"QSKX"}
-DOMAIN-SUFFIX,github.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,midjourney.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,openai.azure.com,QSKX
+DOMAIN-KEYWORD,openai,QSKX
 DOMAIN-SUFFIX,cloudfront.net,US
 DOMAIN-SUFFIX,claude.ai,US
 DOMAIN,bard.google.com,US
