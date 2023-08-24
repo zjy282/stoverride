@@ -42,7 +42,7 @@ DOMAIN-SUFFIX,midjourney.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,openai.azure.com,QSKX
-DOMAIN-KEYWORD,openai,QSKX
+DOMAIN-SUFFIX,openai.com,QSKX
 DOMAIN-SUFFIX,cloudfront.net,US
 DOMAIN-SUFFIX,claude.ai,US
 DOMAIN,bard.google.com,US
