@@ -57,6 +57,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN,bard.google.com,🇺🇲 美国节点',
 'IP-CIDR,52.58.0.0/15,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,intellij.net,🧑🏼‍💻 科学网络',
+'DOMAIN,bard.google.com,🇺🇲 美国节点',
 'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
@@ -99,9 +100,13 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     obj.rules = obj.rules.concat(customsLast).concat(originLast)
 
     const proxies = ["DIRECT"];
+	const proxies2 = ["DIRECT"];
     for (let i = 0; i < obj.proxies.length; i++) {
         if (obj.proxies[i].name.search("美国") !== -1) {
             proxies.push(obj.proxies[i].name)
+        }
+		if (obj.proxies[i].name.search("新加坡") !== -1) {
+            proxies2.push(obj.proxies[i].name)
         }
     }
     obj["proxy-groups"].push({
@@ -110,6 +115,13 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         url: "http://www.gstatic.com/generate_204",
         interval: 300,
         proxies: proxies
+    })
+	obj["proxy-groups"].push({
+        "name": "🇸🇬 新加坡节点",
+        "type": "select",
+        url: "http://www.gstatic.com/generate_204",
+        interval: 300,
+        proxies: proxies2
     })
     obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
