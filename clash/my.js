@@ -57,7 +57,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN,bard.google.com,🇺🇲 美国节点',
 'IP-CIDR,52.58.0.0/15,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,intellij.net,🧑🏼‍💻 科学网络',
-'DOMAIN,bard.google.com,🇺🇲 美国节点',
+'DOMAIN,imap.gmail.com,🇸🇬 新加坡节点',
 'GEOIP,US,🚀 节点选择'
     ]
     const obj = yaml.parse(raw)
