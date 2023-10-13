@@ -94,7 +94,15 @@ rules:
 const lineTemplate1 = `'%s',`
 const lineTemplate2 = `  - %s`
 
+type RuleFileType int
+
+const (
+	AllRuleWithProxy RuleFileType = iota
+	PartRuleWithoutProxy
+)
+
 type Conf struct {
+	FileType     RuleFileType
 	Key          string
 	Template     string
 	Target       string
@@ -103,22 +111,32 @@ type Conf struct {
 
 func GetTemplateConf() (targetList []Conf) {
 	targetList = append(targetList, Conf{
+		FileType:     AllRuleWithProxy,
 		Key:          "clash",
 		Template:     clash,
 		Target:       "./clash/my.js",
 		LineTemplate: lineTemplate1,
 	})
 	targetList = append(targetList, Conf{
+		FileType:     AllRuleWithProxy,
 		Key:          "qx",
 		Template:     `%s`,
 		Target:       "./quantumultx/Kevin",
 		LineTemplate: `%s`,
 	})
 	targetList = append(targetList, Conf{
+		FileType:     AllRuleWithProxy,
 		Key:          "stash",
 		Template:     stash,
 		Target:       "./stash/my.stoverride",
 		LineTemplate: lineTemplate2,
+	})
+	targetList = append(targetList, Conf{
+		FileType:     PartRuleWithoutProxy,
+		Key:          "surge",
+		Template:     `%s`,
+		Target:       "./surge/Kevin-%s",
+		LineTemplate: `%s`,
 	})
 	return
 }
