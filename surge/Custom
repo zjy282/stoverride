@@ -1,1 +1,1 @@
-JP03 = ss, cn00.mynode.me, 8802, encrypt-method=rc4-md5, password=passwd, obfs=http, obfs-host=32607-swq9K3em.download.microsoft.com
+Force VPN = direct, interface=utun8, allow-other-interface=true, test-url=http://test-etcd-inner.qschou.com
