@@ -1,0 +1,2 @@
+[Proxy]
+Force VPN = direct, interface=utun8, allow-other-interface=true, test-url=http://test-etcd-inner.qschou.com
