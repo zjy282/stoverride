@@ -1,5 +1,4 @@
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,claude.ai
-DOMAIN,bard.google.com
 IP-CIDR,52.58.0.0/15
 DOMAIN-SUFFIX,intellij.net

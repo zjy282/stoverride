@@ -54,7 +54,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-KEYWORD,openai,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点',
 'DOMAIN-SUFFIX,claude.ai,🇨🇳 台湾节点',
-'DOMAIN,bard.google.com,🇨🇳 台湾节点',
+'DOMAIN,bard.google.com,🇺🇲 美国节点',
 'IP-CIDR,52.58.0.0/15,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,intellij.net,🧑🏼‍💻 科学网络',
 'DOMAIN,imap.gmail.com,🇸🇬 新加坡节点',

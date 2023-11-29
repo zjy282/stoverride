@@ -45,7 +45,7 @@ DOMAIN-SUFFIX,openai.com,🧑🏼‍💻 科学网络
 DOMAIN-KEYWORD,openai,🧑🏼‍💻 科学网络
 DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点
 DOMAIN-SUFFIX,claude.ai,🇨🇳 台湾节点
-DOMAIN,bard.google.com,🇨🇳 台湾节点
+DOMAIN,bard.google.com,🇺🇲 美国节点
 IP-CIDR,52.58.0.0/15,🇨🇳 台湾节点
 DOMAIN-SUFFIX,intellij.net,🇨🇳 台湾节点
 DOMAIN,imap.gmail.com,🇸🇬 新加坡节点
