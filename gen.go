@@ -12,6 +12,7 @@ import (
 var MappingRule = map[string]string{
 	"PROXY":  "🚀 节点选择",
 	"DIRECT": "🎯 全球直连",
+	"TW":     "🇨🇳 台湾节点",
 	"US":     "🇺🇲 美国节点",
 	"SG":     "🇸🇬 新加坡节点",
 	"QSKX":   "🧑🏼‍💻 科学网络",
