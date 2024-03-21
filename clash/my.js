@@ -99,14 +99,18 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
     obj.rules = obj.rules.concat(customsOther).concat(originOther)
     obj.rules = obj.rules.concat(customsLast).concat(originLast)
 
-    const proxies = ["DIRECT"];
-	const proxies2 = ["DIRECT"];
+    const proxiesUS = ["DIRECT"];
+	const proxiesSG = ["DIRECT"];
+	const proxiesTW = ["DIRECT"];
     for (let i = 0; i < obj.proxies.length; i++) {
         if (obj.proxies[i].name.search("美国") !== -1) {
-            proxies.push(obj.proxies[i].name)
+            proxiesUS.push(obj.proxies[i].name)
         }
 		if (obj.proxies[i].name.search("新加坡") !== -1) {
-            proxies2.push(obj.proxies[i].name)
+            proxiesSG.push(obj.proxies[i].name)
+        }
+        if (obj.proxies[i].name.search("台湾") !== -1) {
+            proxiesTW.push(obj.proxies[i].name)
         }
     }
     obj["proxy-groups"].push({
@@ -114,14 +118,21 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         "type": "select",
         url: "http://www.gstatic.com/generate_204",
         interval: 300,
-        proxies: proxies
+        proxies: proxiesUS
     })
 	obj["proxy-groups"].push({
         "name": "🇸🇬 新加坡节点",
         "type": "select",
         url: "http://www.gstatic.com/generate_204",
         interval: 300,
-        proxies: proxies2
+        proxies: proxiesSG
+    })
+	obj["proxy-groups"].push({
+        "name": "🇨🇳 台湾节点",
+        "type": "select",
+        url: "http://www.gstatic.com/generate_204",
+        interval: 300,
+        proxies: proxiesTW
     })
     obj["proxy-groups"].push({
         "name": "🧑🏼‍💻 科学网络",
