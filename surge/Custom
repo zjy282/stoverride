@@ -8,7 +8,7 @@ dns-server = 119.29.29.29,223.5.5.5
 
 [Proxy]
 DIRECT = direct
-Force VPN = direct, interface=utun8, allow-other-interface=true, test-url=http://test-etcd-inner.qschou.com
+Force VPN = direct, interface=ppp0, allow-other-interface=true, test-url=https://www.baidu.com
 
 [Proxy Group]
 🚀 节点选择 = select,DIRECT,Force VPN
