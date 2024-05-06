@@ -34,19 +34,27 @@ DOMAIN-SUFFIX,jsdelivr.net,🚀 节点选择
 DOMAIN-SUFFIX,convertio.me,🚀 节点选择
 DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择
 DOMAIN-KEYWORD,depay,🚀 节点选择
+DOMAIN-SUFFIX,stripe.com,🚀 节点选择
+DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点
+DOMAIN,imap.gmail.com,🇸🇬 新加坡节点
+IP-CIDR,52.58.0.0/15,🇨🇳 台湾节点
+DOMAIN-SUFFIX,intellij.net,🇨🇳 台湾节点
+DOMAIN-KEYWORD,tiktok,🇺🇲 美国节点
+DOMAIN-SUFFIX,facebook.com,🚀 节点选择
 DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
 DOMAIN-KEYWORD,github,🚀 节点选择
 DOMAIN-SUFFIX,github.com,🚀 节点选择
 DOMAIN-SUFFIX,midjourney.com,🚀 节点选择
 DOMAIN-SUFFIX,discord.com,🚀 节点选择
-DOMAIN-SUFFIX,stripe.com,🚀 节点选择
 DOMAIN-SUFFIX,openai.azure.com,🧑🏼‍💻 科学网络
-DOMAIN-SUFFIX,openai.com,🧑🏼‍💻 科学网络
 DOMAIN-KEYWORD,openai,🧑🏼‍💻 科学网络
-DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点
-DOMAIN-SUFFIX,claude.ai,🇨🇳 台湾节点
-DOMAIN,bard.google.com,🇸🇬 新加坡节点
-IP-CIDR,52.58.0.0/15,🇨🇳 台湾节点
-DOMAIN-SUFFIX,intellij.net,🇨🇳 台湾节点
-DOMAIN,imap.gmail.com,🇸🇬 新加坡节点
+DOMAIN-SUFFIX,chatgpt.com,🧑🏼‍💻 科学网络
+DOMAIN-SUFFIX,claude.ai,🇺🇲 美国节点
+DOMAIN-SUFFIX,anthropic.com,🇺🇲 美国节点
+DOMAIN,dl.google.com,🚀 节点选择
+DOMAIN,bard.google.com,🇺🇲 美国节点
+DOMAIN,aistudio.google.com,🇺🇲 美国节点
+DOMAIN,gemini.google.com,🇺🇲 美国节点
+DOMAIN,generativelanguage.googleapis.com,🇺🇲 美国节点
+DOMAIN,makersuite.google.com,🇺🇲 美国节点
 GEOIP,US,🚀 节点选择
