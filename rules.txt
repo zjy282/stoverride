@@ -42,9 +42,7 @@ DOMAIN-SUFFIX,intellij.net,TW,{"clash":"QSKX"}
 DOMAIN-KEYWORD,tiktok,US
 DOMAIN-SUFFIX,facebook.com,PROXY
 
-DOMAIN-SUFFIX,githubusercontent.com,PROXY,{"clash":"QSKX"}
 DOMAIN-KEYWORD,github,PROXY,{"clash":"QSKX"}
-DOMAIN-SUFFIX,github.com,PROXY,{"clash":"QSKX"}
 
 DOMAIN-SUFFIX,midjourney.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,discord.com,PROXY,{"clash":"QSKX"}
