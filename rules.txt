@@ -36,7 +36,7 @@ DOMAIN-SUFFIX,pythonhosted.org,PROXY
 DOMAIN-KEYWORD,depay,PROXY
 DOMAIN-SUFFIX,stripe.com,PROXY,{"clash":"QSKX"}
 DOMAIN-SUFFIX,cloudfront.net,TW
-DOMAIN,imap.gmail.com,SG
+DOMAIN-SUFFIX,gmail.com,SG
 IP-CIDR,52.58.0.0/15,TW,{"clash":"QSKX"}
 DOMAIN-SUFFIX,intellij.net,TW,{"clash":"QSKX"}
 DOMAIN-KEYWORD,tiktok,US
