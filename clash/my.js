@@ -44,7 +44,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择',
 'DOMAIN-KEYWORD,depay,🚀 节点选择',
 'DOMAIN-SUFFIX,stripe.com,🧑🏼‍💻 科学网络',
-'DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点',
+'DOMAIN-SUFFIX,cloudfront.net,🇸🇬 新加坡节点',
 'DOMAIN,imap.gmail.com,📧 Gmail邮件',
 'DOMAIN,smtp.gmail.com,📧 Gmail邮件',
 'IP-CIDR,52.58.0.0/15,🧑🏼‍💻 科学网络',
