@@ -16,6 +16,7 @@ var MappingRule = map[string]string{
 	"US":     "🇺🇲 美国节点",
 	"SG":     "🇸🇬 新加坡节点",
 	"QSKX":   "🧑🏼‍💻 科学网络",
+	"GMAIL":  "📧 Gmail邮件",
 }
 
 func main() {

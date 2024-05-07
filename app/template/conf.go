@@ -92,6 +92,13 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         interval: 1000,
         proxies: ["DIRECT", "🇺🇲 美国节点", "🚀 节点选择"]
     })
+	obj["proxy-groups"].push({
+        "name": "📧 Gmail邮件",
+        "type": "select",
+        url: "https://gmail.com/",
+        interval: 1000,
+        proxies: ["DIRECT", "🇭🇰 香港05", "🇭🇰 香港07"]
+    })
     return yaml.stringify(obj)
 }
 `

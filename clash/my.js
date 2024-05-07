@@ -45,8 +45,8 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-KEYWORD,depay,🚀 节点选择',
 'DOMAIN-SUFFIX,stripe.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点',
-'DOMAIN,imap.gmail.com,🇸🇬 新加坡节点',
-'DOMAIN,smtp.gmail.com,🇸🇬 新加坡节点',
+'DOMAIN,imap.gmail.com,📧 Gmail邮件',
+'DOMAIN,smtp.gmail.com,📧 Gmail邮件',
 'IP-CIDR,52.58.0.0/15,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,intellij.net,🧑🏼‍💻 科学网络',
 'DOMAIN-KEYWORD,tiktok,🇺🇲 美国节点',
@@ -147,6 +147,13 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
         url: "https://google.com/",
         interval: 1000,
         proxies: ["DIRECT", "🇺🇲 美国节点", "🚀 节点选择"]
+    })
+	obj["proxy-groups"].push({
+        "name": "📧 Gmail邮件",
+        "type": "select",
+        url: "https://gmail.com/",
+        interval: 1000,
+        proxies: ["DIRECT", "🇭🇰 香港05", "🇭🇰 香港07"]
     })
     return yaml.stringify(obj)
 }

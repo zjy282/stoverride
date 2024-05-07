@@ -36,8 +36,8 @@ DOMAIN-SUFFIX,pythonhosted.org,🚀 节点选择
 DOMAIN-KEYWORD,depay,🚀 节点选择
 DOMAIN-SUFFIX,stripe.com,🚀 节点选择
 DOMAIN-SUFFIX,cloudfront.net,🇨🇳 台湾节点
-DOMAIN,imap.gmail.com,🇸🇬 新加坡节点
-DOMAIN,smtp.gmail.com,🇸🇬 新加坡节点
+DOMAIN,imap.gmail.com,📧 Gmail邮件
+DOMAIN,smtp.gmail.com,📧 Gmail邮件
 IP-CIDR,52.58.0.0/15,🇨🇳 台湾节点
 DOMAIN-SUFFIX,intellij.net,🇨🇳 台湾节点
 DOMAIN-KEYWORD,tiktok,🇺🇲 美国节点
