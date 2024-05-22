@@ -52,6 +52,7 @@ module.exports.parse = async (raw, { axios, yaml, notify, console }, { name, url
 'DOMAIN-KEYWORD,tiktok,🇺🇲 美国节点',
 'DOMAIN-SUFFIX,facebook.com,🚀 节点选择',
 'DOMAIN-KEYWORD,github,🧑🏼‍💻 科学网络',
+'DOMAIN-SUFFIX,civitai.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,midjourney.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,discord.com,🧑🏼‍💻 科学网络',
 'DOMAIN-SUFFIX,openai.azure.com,🧑🏼‍💻 科学网络',
